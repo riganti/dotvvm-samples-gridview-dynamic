@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "DynamicGridViewSample": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:58217;http://localhost:58218"
+    }
+  }
+}

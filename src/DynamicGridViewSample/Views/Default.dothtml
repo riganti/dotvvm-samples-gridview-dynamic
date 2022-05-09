@@ -1,0 +1,13 @@
+﻿@viewModel DynamicGridViewSample.ViewModels.DefaultViewModel, DynamicGridViewSample
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <dot:GridView DataSource="{value: Products}" ID="grid">
+        <dot:GridViewTemplateColumn>
+            <dot:RouteLink RouteName="Product" Param-Id="{value: Int["ProductID"]}">Edit</dot:RouteLink>
+        </dot:GridViewTemplateColumn>
+    </dot:GridView>
+
+    <dot:DataPager DataSet="{value: Products}" />
+
+</dot:Content>
